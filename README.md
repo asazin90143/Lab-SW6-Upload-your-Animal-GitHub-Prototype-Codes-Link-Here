@@ -38,16 +38,17 @@ java TestAnimal
 
 ## Expected output
 
-When you run `TestAnimal`, the program will print each animal sound and type, for example:
+When you run `TestAnimal`, the program will print each animal sound and full details, for example:
 
 ```text
 Dolly the sheep says: Baa
+Type: Sheep, Name: Dolly, Legs: 4, Sound: Baa, Food: Grass
 Molly the sheep says: Baa
+Type: Sheep, Name: Molly, Legs: 4, Sound: Baa, Food: Grass
 Cow says: Moo
+Type: Cow, Legs: 4, Sound: Moo, Food: Grass
 Horse says: Nee
-Type: Sheep
-Type: Cow
-Type: Horse
+Type: Horse, Color: Brown, Legs: 4, Sound: Nee, Food: Hay
 ```
 
 ## Notes

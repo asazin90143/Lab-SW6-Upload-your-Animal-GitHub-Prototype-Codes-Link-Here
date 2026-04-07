@@ -25,4 +25,11 @@ public class Horse implements Animal {
     public String getType() {
         return "Horse";
     }
+
+    @Override
+    public String getDetails() {
+        return String.format(
+                "Type: %s, Color: %s, Legs: %d, Sound: %s, Food: %s",
+                getType(), color, legs, sound, food);
+    }
 }

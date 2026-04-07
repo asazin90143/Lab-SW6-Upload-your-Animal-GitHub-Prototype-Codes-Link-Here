@@ -23,4 +23,11 @@ public class Cow implements Animal {
     public String getType() {
         return "Cow";
     }
+
+    @Override
+    public String getDetails() {
+        return String.format(
+                "Type: %s, Legs: %d, Sound: %s, Food: %s",
+                getType(), legs, sound, food);
+    }
 }

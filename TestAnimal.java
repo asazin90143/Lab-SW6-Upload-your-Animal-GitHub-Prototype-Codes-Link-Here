@@ -8,12 +8,15 @@ public class TestAnimal {
         Animal horse = registry.createHorse();
 
         sheep1.makeSound();
-        sheep2.makeSound();
-        cow.makeSound();
-        horse.makeSound();
+        System.out.println(sheep1.getDetails());
 
-        System.out.println("Type: " + sheep1.getType());
-        System.out.println("Type: " + cow.getType());
-        System.out.println("Type: " + horse.getType());
+        sheep2.makeSound();
+        System.out.println(sheep2.getDetails());
+
+        cow.makeSound();
+        System.out.println(cow.getDetails());
+
+        horse.makeSound();
+        System.out.println(horse.getDetails());
     }
 }
