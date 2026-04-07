@@ -1,19 +1,28 @@
-public class TestAnimal {
-    public static void main(String[] args) {
-        AnimalRegistry registry = new AnimalRegistry();
+public class Horse implements Animal {
+    private int legs;
+    private String sound;
+    private String food;
+    private String color;
 
-        Animal sheep1 = registry.createSheep("Dolly");
-        Animal sheep2 = registry.createSheep("Molly");
-        Animal cow = registry.createCow();
-        Animal horse = registry.createHorse();
+    public Horse(int legs, String sound, String food, String color) {
+        this.legs = legs;
+        this.sound = sound;
+        this.food = food;
+        this.color = color;
+    }
 
-        sheep1.makeSound();
-        sheep2.makeSound();
-        cow.makeSound();
-        horse.makeSound();
+    @Override
+    public Animal clone() {
+        return new Horse(legs, sound, food, color);
+    }
 
-        System.out.println("Type: " + sheep1.getType());
-        System.out.println("Type: " + cow.getType());
-        System.out.println("Type: " + horse.getType());
+    @Override
+    public void makeSound() {
+        System.out.println("Horse says: " + sound);
+    }
+
+    @Override
+    public String getType() {
+        return "Horse";
     }
 }
